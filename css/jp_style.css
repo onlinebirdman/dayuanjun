@@ -1,0 +1,44 @@
+.jp.fl { float: left;}
+.jp.fr { float: right;}
+
+/*
+*头尾对齐，中间均分，自动换行
+ */
+.jp.flex-auto-wrap { flex-wrap: wrap;-webkit-flex-wrap: wrap;display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between;}
+
+
+@keyframes myfadein
+{
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes myfadein /* Safari 与 Chrome */
+{
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+.myfadein {
+	animation: myfadein 1s;
+	-webkit-animation: myfadein 1s;/*Safari 与 Chrome*/
+}
+
+@keyframes broadcast
+{
+	from{ left: 10px; }
+	to{ left: 900px; }
+}
+@-webkit-keyframes broadcast
+{
+	from{ left: 10px; }
+	to{ left: 900px; }
+}
+
+.posters {
+	animation: broadcast 6s linear;
+	-webkit-animation: broadcast 6s linear;/*Safari 与 Chrome*/
+	color:red;
+	cursor: pointer;
+}
+.posters:hover { font-weight: 700 }
