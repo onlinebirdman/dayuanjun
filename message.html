@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>达源骏报关服务有限公司</title>
+	<link rel="stylesheet" href="css/reset..css">
+	<link rel="stylesheet" href="./../../框架/JP/jp_style.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img class="logo jp fl" src="imagas/logo.png" alt="">
+			<ul class="navigation jp fl">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">公司简介</a></li>
+				<li><a href="consult.html">咨询中心</a></li>
+				<li><a href="message.html">在线留言</a></li>
+			</ul>
+		</div>
+		<img style="width:100%" src="imagas/123.png" alt="">
+		<div class="jp flex-auto-wrap">
+			<div class="left-box">
+					<div class="left-top">
+						<p class="title">咨询服务</p>
+						<ul class="list">
+							<li><a href="#">在线留言</a></li>
+							<li><a href="#">联系方式</a></li>
+						</ul>
+					</div>
+				
+					<div class="left-buttom">
+						<img src="imagas/icons/ren.jpg" alt=""><p>联系人: 黄先生</p>
+						<img src="imagas/icons/tel.jpg" alt=""><p>联系电话： 0755-22351862</p>
+						<img src="imagas/icons/adr.jpg" alt=""><p>联系地址：深圳市盐田区深盐路壹海城一区1栋壹海中心1206</p>
+						<img src="imagas/icons/mes.jpg" alt=""><p "><a href="#" style="color: red">留言板 &gt;&gt;</a></p>
+					</div>
+			</div>
+				<div class="right-box">
+					<p class="title">首页&gt;&gt;在线留言</p>
+					<div class="message-form">
+						<form action="">
+							<table>
+								<tbody>
+									<tr>
+										<td>标题：</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>姓名：</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>电子邮箱：</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>公司名称：</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>电话：</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>留言内容：</td>
+										<td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+									</tr>
+									<tr>
+										<td>验证码：</td>
+										<td><input type="text"><img width="60px" height="30px" src="imagas/yzm.png" alt="11"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="submit"> <input type="reset"></td>
+									</tr>
+
+								</tbody>
+							</table>
+							<!-- <div class="form-groud">标题: <input type="text">*</div>
+							<div class="form-groud">姓名: <input type="text">*</div>
+							<div class="form-groud">电子邮箱: <input type="text">*</div>
+							<div class="form-groud">公司名称: <input type="text">*</div>
+							<div class="form-groud">电话: <input type="text">*</div>
+							<div class="form-groud">地址: <input type="text">*</div>
+							<div class="form-groud">留言内容: <input type="textarea">*</div>
+							<div class="form-groud">验证码: <input type="text"> <img src="" alt=""></div>
+							 -->
+						</form>
+					</div>
+				</div>
+				<div class="right-box" style="display: none">
+					<p class="title">首页&gt;&gt;公司概况&gt;&gt;公司介绍</p>
+					<div class="news-content">
+						<h2>深圳市达源峻报关服务有限公司</h2>
+						<p>邮箱：qiuyuancheng@dayuanjun.com</p>
+						<p>联系人：邱先生</p>
+						<p>电话号码：0755-25271632</p>
+						<p>手机号码：13760207410</p>
+						<p>地址：深圳市罗湖区锦绣大厦A座17F</p>
+					</div>
+				</div>
+		</div>
+		<div id="footer">
+			<ul class="footer">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">资讯中心</a></li>
+				<li><a href="#">在线留言</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+			<p>版权所有 深圳市达源峻报关服务有限公司 电话：0755-22370565 粤ICP备15049502号</p>
+		</div>
+	</div>
+<script src="js/main.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+window.onload=function(){
+	var rightBoxs = document.getElementsByClassName('right-box');
+	$('.left-top').find('li').click(function() {
+		$('.right-box').hide()
+		$(rightBoxs[$(this).index()]).show();
+	}) 
+}
+</script>
+</body>
+</html>

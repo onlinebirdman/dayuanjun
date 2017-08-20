@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>达源骏报关服务有限公司</title>
+	<link rel="stylesheet" href="css/reset..css">
+	<link rel="stylesheet" href="./../../框架/JP/jp_style.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img class="logo jp fl" src="imagas/logo.png" alt="">
+			<ul class="navigation jp fl">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">公司简介</a></li>
+				<li><a href="consult.html">咨询中心</a></li>
+				<li><a href="message.html">在线留言</a></li>
+			</ul>
+		</div>
+		<img style="width:100%" src="imagas/123.png" alt="">
+		<div class="jp flex-auto-wrap">
+			<div class="left-box">
+					<div class="left-top">
+						<p class="title">公司概况</p>
+						<ul class="list">
+							<li><a href="#">公司介绍</a></li>
+							<li><a href="#">经营理念</a></li>
+							<li><a href="#">主营业务</a></li>
+						</ul>
+					</div>
+				
+					<div class="left-buttom">
+						<img src="imagas/icons/ren.jpg" alt=""><p>联系人: 黄先生</p>
+						<img src="imagas/icons/tel.jpg" alt=""><p>联系电话： 0755-22351862</p>
+						<img src="imagas/icons/adr.jpg" alt=""><p>联系地址：深圳市盐田区深盐路壹海城一区1栋壹海中心1206</p>
+						<img src="imagas/icons/mes.jpg" alt=""><p "><a href="#" style="color: red">留言板 &gt;&gt;</a></p>
+					</div>
+				</div>
+				<div class="right-box">
+					<p class="title">首页&gt;&gt;公司概况&gt;&gt;公司介绍</p>
+					<div class="news-content">
+						<p>
+							深圳市达源峻报关服务有限公司--经国家商务部、交通部和海关总署批准成立的国家一级国际货运代理企业。同时已成为深圳市货代协会（SIFFA）成员，国际货代联合会（WIFFA）成员，中国国际货代协会（CIFA）成员，中国报关协会（CCBA）理事，国际航运企业联盟（ISEA）创始成员之一，深圳报关协会（SZCBA）成员,深圳集装箱运输协会成员（深圳拖车协会）
+						</p>
+					</div>
+				</div>
+				<div class="right-box" style="display: none">
+					<p class="title">首页&gt;&gt;公司概况&gt;&gt;经营理念</p>
+					<div class="news-content">
+						<p>1.经营宗旨：面向市场，把握机遇，全程服务，诚信经营</p>
+						<p>2.经营方针：主营出口，专注海运，配套服务，追求完美</p>
+						<p>3.质量方针：高品质，高效率，满足客户，提升自我</p>
+						<p>4.营销理念：依靠专业的服务态度赢得市场，提供真诚的双赢合作获 得客户</p>
+						<p>5.用人之道：以人为本，以智取胜，公平竞争，团队合作</p>
+					</div>
+				</div>
+				<div class="right-box" style="display: none">
+					<p class="title">首页&gt;&gt;公司概况&gt;&gt;主营业务</p>
+					<div class="news-content"> 
+						<p>
+							我司成立以来主要以经营和发展出口贸易为主，专门为各贸易商或生产厂家代理货物出口业务。
+							拥有多名经验丰富、高效率报关专业人员，有着丰富的报关经验和良好的人际关系。本公司愿在遵守国家法律和法规的前提下，与广大企业和厂家开展多种形式的互惠互利合作，谋求双赢，共创未来！
+						</p>
+				 
+						<p>★ 业务范围：</p> 
+						<p>专业为贸易商或生产厂家代理各种货物订舱，报关、商检、拖车以及办理产地证（CO.）普惠证（F/A）等项业务。一贯以快捷、稳妥、互惠互利的经营方式与贸易商（厂家）合作，保证客户的产品进出海关不受到任何影响。</p>
+						 
+						<p>代办CIQ、普惠证（FORM A）、产地证（CO）等</p>
+						 
+						<p>★  主要口岸：
+							1、深圳盐田、蛇口
+							2、文锦渡、皇岗 
+							3、深圳散货入仓 </p>
+					</div>
+				</div>
+			
+
+		</div>
+		<div id="footer">
+			<ul class="footer">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">资讯中心</a></li>
+				<li><a href="#">在线留言</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+			<p>版权所有 深圳市达源峻报关服务有限公司 电话：0755-22370565 粤ICP备15049502号</p>
+		</div>
+	</div>
+<script src="js/main.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+window.onload=function(){
+	var rightBoxs = document.getElementsByClassName('right-box');
+	$('.left-top').find('li').click(function() {
+		$('.right-box').hide()
+		$(rightBoxs[$(this).index()]).show();
+	}) 
+}
+</script>
+</body>
+</html>
